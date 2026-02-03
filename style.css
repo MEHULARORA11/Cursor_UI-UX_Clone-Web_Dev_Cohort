@@ -10,6 +10,9 @@ body {
     background-color: #14120B;
     color: #EDECEC;
     font-family: "Carrois Gothic", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 body::selection {
@@ -19,16 +22,18 @@ body::selection {
 header {
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #14120B;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
     padding: 10px;
-    top: 0;
-    width: 85%;
+    min-width: 88%;
     background-color: #14120B;
 }
 
@@ -77,6 +82,10 @@ nav {
     background-color: #1B1913;
 }
 
+main {
+    width: 100%;
+}
+
 .download {
     border: none;
     padding: 6px 12px;
@@ -88,8 +97,6 @@ nav {
 .download:hover {
     background-color: #D7D6D5;
 }
-
-main
 
 .hero-first {
     width: 85%;
@@ -145,7 +152,8 @@ main
 
 .cards {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap: 10px;
 }
 
@@ -155,7 +163,7 @@ main
     justify-content: center;
     background-color: #1B1913;
     width: 20%;
-    height: 100px;
+    height: 15vh;
 }
 
 .hero-fourth {
@@ -165,6 +173,7 @@ main
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding: 15px;
 }
 
@@ -177,7 +186,8 @@ main
     font-size: 22px;
     line-height: 29px;
     font-weight: 400;
-    color: #989794
+    color: #989794;
+    margin-bottom: 15px;
 }
 
 .hero-fourth-text a {
@@ -185,7 +195,6 @@ main
     text-decoration: none;
     color: #f54e00;
     font-weight: 400;
-    
 }
 
 .hero-fourth-text a:hover {
@@ -195,4 +204,147 @@ main
 
 .hero-fourth img {
     border-radius: 5px;
+    width: 68%;
+}
+
+.hero-fifth {
+    width: 85%;
+    margin: 12vh auto;
+    background-color: #1D1B15;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 15px;
+}
+
+.hero-fifth-text h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.hero-fifth-text p {
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #989794;
+    margin-bottom: 15px;
+}
+
+.hero-fifth-text a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #f54e00;
+    font-weight: 400;
+}
+
+.hero-fifth-text a:hover {
+    color: #BF4105;
+    
+}
+
+.hero-fifth img {
+    border-radius: 5px;
+    width: 68%;
+}
+
+.hero-sixth {
+    width: 85%;
+    margin: 12vh auto;
+    background-color: #1D1B15;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.hero-sixth-text h3 {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.hero-sixth-text p {
+    font-size: 22px;
+    line-height: 29px;
+    font-weight: 400;
+    color: #989794;
+    margin-bottom: 15px;
+}
+
+.hero-sixth-text a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #f54e00;
+    font-weight: 400;
+}
+
+.hero-sixth-text a:hover {
+    color: #BF4105;
+    
+}
+
+.hero-sixth img {
+    border-radius: 5px;
+    width: 68%;
+}
+
+
+.testimonials {
+    width: 85%;
+    margin: auto;
+}
+
+.testimonials h3 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 8vh;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 10px;
+}
+
+.grid-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #1B1913;
+    padding: 20px;
+    border-radius: 5px;
+    /* width: 33%; */
+    /* text-overflow: clip; */
+}
+
+.grid-card p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.author {
+    display: flex;
+    gap: 12px;
+    margin-top: 15%;
+}
+
+.author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.name {
+    font-weight: 400;
+}
+
+.designation {
+    color: #919693;
+    font-weight: 400;
 }
