@@ -22,7 +22,7 @@ body::selection {
 header {
     display: flex;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
     background-color: #14120B;
@@ -118,6 +118,7 @@ main {
     gap: 5px;
     cursor: pointer;
 }
+
 .hero-first button:hover {
     background-color: #D7D6D5;
 }
@@ -199,7 +200,7 @@ main {
 
 .hero-fourth-text a:hover {
     color: #BF4105;
-    
+
 }
 
 .hero-fourth img {
@@ -242,7 +243,7 @@ main {
 
 .hero-fifth-text a:hover {
     color: #BF4105;
-    
+
 }
 
 .hero-fifth img {
@@ -283,7 +284,7 @@ main {
 
 .hero-sixth-text a:hover {
     color: #BF4105;
-    
+
 }
 
 .hero-sixth img {
@@ -348,3 +349,148 @@ main {
     color: #919693;
     font-weight: 400;
 }
+
+.frontier {
+    width: 85%;
+    margin: 20vh auto;
+
+}
+
+.frontier h3 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.frontier-cards {
+    display: flex;
+    gap: 12px;
+}
+
+.frontier-card {
+    width: 33%;
+    padding: 18px;
+    background-color: #1B1913;
+    border-radius: 5px;
+}
+
+.frontier-card img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.frontier-card h4 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.frontier-card p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #989794;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.frontier-card a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #f54e00;
+    font-weight: 400;
+}
+
+.frontier-card a:hover {
+    color: #BF4105;
+}
+
+.changelog {
+    width: 85%;
+    margin: auto;
+}
+
+.changelog h3 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+
+.changelog-cards {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.changelog-card {
+    width: 33%;
+    padding: 18px;
+    padding-right: 25px;
+    background-color: #1B1913;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.changelog-card:hover {
+    background-color: #201E18;
+}
+
+.changelog-card span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #989794;
+}
+
+.version {
+    margin-right: 10px;
+    border: 1px solid #8B8A88;
+    padding: 1px 8px;
+    border-radius: 15px;
+}
+
+.changelog-card p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 15px;
+    font-weight: 400;
+}
+
+.changelog a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #f54e00;
+    font-weight: 400;
+}
+
+.changelog a:hover {
+    color: #BF4105;
+}
+
+.team {
+    width: 85%;
+    margin: 20vh auto;
+}
+
+.team h3 {
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.team button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.team button:hover {
+    background-color: #D7D6D5;
+}
+
+.team img {
+    width: 100%;
+}
+
